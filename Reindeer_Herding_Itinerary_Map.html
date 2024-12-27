@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8fc333af0d2d21dd1f3f352b0993a0ef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8fc333af0d2d21dd1f3f352b0993a0ef" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8fc333af0d2d21dd1f3f352b0993a0ef = L.map(
+                "map_8fc333af0d2d21dd1f3f352b0993a0ef",
+                {
+                    center: [67.8558, 20.2253],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7e551e12b77c12693dbe0816dc23b12a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8fc333af0d2d21dd1f3f352b0993a0ef);
+        
+    
+            var marker_dc3603f0d9025a871ae217362f56717d = L.marker(
+                [67.8558, 20.2253],
+                {}
+            ).addTo(map_8fc333af0d2d21dd1f3f352b0993a0ef);
+        
+    
+        var popup_c1a314d1d12dc72756472f1284e7d83e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff27dcb304b97df76de8aaeb8a21bc55 = $(`<div id="html_ff27dcb304b97df76de8aaeb8a21bc55" style="width: 100.0%; height: 100.0%;"><b>Kiruna</b><br>Feb 21, Feb 26-27<br>Arrival and departure point.</div>`)[0];
+            popup_c1a314d1d12dc72756472f1284e7d83e.setContent(html_ff27dcb304b97df76de8aaeb8a21bc55);
+        
+
+        marker_dc3603f0d9025a871ae217362f56717d.bindPopup(popup_c1a314d1d12dc72756472f1284e7d83e)
+        ;
+
+        
+    
+    
+            marker_dc3603f0d9025a871ae217362f56717d.bindTooltip(
+                `<div>
+                     Kiruna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_982291dfbb5b6fd2c05fac5f50772acf = L.marker(
+                [68.1819, 21.1641],
+                {}
+            ).addTo(map_8fc333af0d2d21dd1f3f352b0993a0ef);
+        
+    
+        var popup_95f255b1ff6e5f37f2384c5994f7f49b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_882a94cd84dd14d5861da4d9d0c3183d = $(`<div id="html_882a94cd84dd14d5861da4d9d0c3183d" style="width: 100.0%; height: 100.0%;"><b>Övre Sopporo</b><br>Feb 22-23, Feb 25-26<br>Dinner, fireside conversation, and explore forest reindeer herding.</div>`)[0];
+            popup_95f255b1ff6e5f37f2384c5994f7f49b.setContent(html_882a94cd84dd14d5861da4d9d0c3183d);
+        
+
+        marker_982291dfbb5b6fd2c05fac5f50772acf.bindPopup(popup_95f255b1ff6e5f37f2384c5994f7f49b)
+        ;
+
+        
+    
+    
+            marker_982291dfbb5b6fd2c05fac5f50772acf.bindTooltip(
+                `<div>
+                     Övre Sopporo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60f7f79fbd020b95bb87266495711687 = L.marker(
+                [68.5137, 21.3245],
+                {}
+            ).addTo(map_8fc333af0d2d21dd1f3f352b0993a0ef);
+        
+    
+        var popup_5a38640650d7c36ebf2ce3d93995ebc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_035ef9723df77021dac10f04db677dea = $(`<div id="html_035ef9723df77021dac10f04db677dea" style="width: 100.0%; height: 100.0%;"><b>Jårená</b><br>Feb 24-25<br>Cabin stay, observe herding practices, and sauna.</div>`)[0];
+            popup_5a38640650d7c36ebf2ce3d93995ebc1.setContent(html_035ef9723df77021dac10f04db677dea);
+        
+
+        marker_60f7f79fbd020b95bb87266495711687.bindPopup(popup_5a38640650d7c36ebf2ce3d93995ebc1)
+        ;
+
+        
+    
+    
+            marker_60f7f79fbd020b95bb87266495711687.bindTooltip(
+                `<div>
+                     Jårená
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7e9f2444f97323e60e4b06b27d73b92e = L.polyline(
+                [[67.8558, 20.2253], [68.1819, 21.1641]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_8fc333af0d2d21dd1f3f352b0993a0ef);
+        
+    
+            var poly_line_1e708aef97700a4ca0238068dc09ed29 = L.polyline(
+                [[68.1819, 21.1641], [68.5137, 21.3245]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_8fc333af0d2d21dd1f3f352b0993a0ef);
+        
+    
+            var poly_line_59f7d701a5af100eceed3214ade6593a = L.polyline(
+                [[68.5137, 21.3245], [68.1819, 21.1641]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_8fc333af0d2d21dd1f3f352b0993a0ef);
+        
+    
+            var poly_line_82cae431c43ed340d2cb4fc5cb72e4a8 = L.polyline(
+                [[68.1819, 21.1641], [67.8558, 20.2253]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_8fc333af0d2d21dd1f3f352b0993a0ef);
+        
+</script>
+</html>
